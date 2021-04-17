@@ -1,8 +1,8 @@
 import { StringParams } from "openapi-ts-backend";
 import { ParsedQs } from "qs";
-import { convertQuery } from "./filter-query";
+import { convertQuery } from "./converters";
 
-describe("filterQuery", () => {
+describe("convertQuery", () => {
   it("removes undefined values", () => {
     const query: ParsedQs = { a: "1", b: undefined };
 

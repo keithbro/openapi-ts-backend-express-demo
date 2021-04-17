@@ -1,6 +1,6 @@
 import express from "express";
 import { api } from "./api";
-import { connect } from "./filter-query";
+import { connect } from "./openapi-ts-backend-express";
 
 const app = express();
 
