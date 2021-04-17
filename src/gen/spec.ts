@@ -16,7 +16,7 @@ export interface paths {
 export interface components {
   schemas: {
     Pet: {
-      id: number;
+      id: string;
       name: string;
       tag?: string;
       type?: "asc" | "desc";
@@ -78,7 +78,7 @@ export interface operations {
     parameters: {
       path: {
         /** The id of the pet to retrieve */
-        petId: number;
+        petId: string;
       };
     };
     responses: {

@@ -1,6 +1,6 @@
 import { api } from "./api";
 
-describe("server", () => {
+describe("api", () => {
   it("createPets - missing requestBody", async () => {
     const res = await api.handleRequest({
       method: "post",
@@ -53,7 +53,10 @@ describe("server", () => {
       method: "post",
       path: "/pets",
       headers: {},
-      body: { id: 42, name: "Eddie Eggman" },
+      body: {
+        id: "d6896e62-292f-4ca4-b162-c85697708bfd",
+        name: "Eddie Eggman",
+      },
     });
     expect(res.body).toEqual(undefined);
     expect(res.statusCode).toEqual(201);
