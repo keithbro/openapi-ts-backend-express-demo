@@ -1,6 +1,6 @@
 # OpenAPI-TS-Backend + Express Demo
 
-An example of how to use openapi-ts-backend to create typed request handlers that integrate with Express.
+An example of how to use `openapi-ts-backend` and `openapi-typescript-codegen` to create typed request handlers that integrate with Express and a TypeScript client library.
 
 ## Why is this interesting?
 
@@ -8,6 +8,7 @@ An example of how to use openapi-ts-backend to create typed request handlers tha
 - Automatic generation of request and response types
 - Automatic validation of request and response data
 - Automatic coercion of request data e.g. numeric query parameters
+- Automatic generation of a TypeScript client library
 
 ## Run the server
 
@@ -21,11 +22,11 @@ yarn dev
 yarn test
 ```
 
-## Updating the Schema:
+## Update the Schema:
 
 - Update the openapi.yaml file.
-- Run `yarn types:generate`.
-- Request handlers will now be typed with the changes.
+- Run `yarn generate:all`.
+- Request handlers and the client library will now be typed with the changes.
 
 ## Notes
 
