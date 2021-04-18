@@ -48,7 +48,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Pet"
+              $ref: "#/components/schemas/CreatePet"
       responses:
         "201":
           description: Null response
@@ -96,6 +96,21 @@ components:
         id:
           type: string
           format: uuid
+        name:
+          type: string
+        tag:
+          type: string
+        type:
+          type: string
+          enum: [asc, desc]
+        start_date:
+          type: string
+          format: date
+    CreatePet:
+      type: object
+      required:
+        - name
+      properties:
         name:
           type: string
         tag:

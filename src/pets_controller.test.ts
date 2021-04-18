@@ -1,4 +1,4 @@
-import { listPets, createPets } from "./pets_controller";
+import { listPets } from "./pets_controller";
 
 describe("openapi-ts", () => {
   it("listPets", async () => {

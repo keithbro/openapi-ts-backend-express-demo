@@ -22,6 +22,12 @@ export interface components {
       type?: "asc" | "desc";
       start_date?: string;
     };
+    CreatePet: {
+      name: string;
+      tag?: string;
+      type?: "asc" | "desc";
+      start_date?: string;
+    };
     Pets: components["schemas"]["Pet"][];
     Error: {
       code: number;
@@ -70,7 +76,7 @@ export interface operations {
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["Pet"];
+        "application/json": components["schemas"]["CreatePet"];
       };
     };
   };

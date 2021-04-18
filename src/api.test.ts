@@ -24,7 +24,7 @@ describe("api", () => {
     });
   });
 
-  it("createPet - missing ID", async () => {
+  it("createPet - missing name", async () => {
     const res = await api.handleRequest({
       method: "post",
       path: "/pets",
@@ -38,9 +38,9 @@ describe("api", () => {
             data: {
               dataPath: ".requestBody",
               keyword: "required",
-              params: { missingProperty: "id" },
+              params: { missingProperty: "name" },
             },
-            message: ".requestBody should have required property 'id'",
+            message: ".requestBody should have required property 'name'",
           },
         ],
       },
