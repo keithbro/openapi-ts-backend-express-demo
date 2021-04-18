@@ -2,7 +2,25 @@
 
 An example of how to use openapi-ts-backend to create typed request handlers that integrate with Express.
 
-## NOtes
+## Run the server
+
+```sh
+yarn ts-node src/server.ts
+```
+
+## Run the tests
+
+```sh
+yarn jest src
+```
+
+## Updating the Schema:
+
+- Update the openapi.yaml file.
+- Run `yarn openapi-ts-backend generate-types openapi.yaml src/gen`.
+- Request handlers will now be typed with the changes.
+
+## Notes
 
 openapi-ts-backend
 
