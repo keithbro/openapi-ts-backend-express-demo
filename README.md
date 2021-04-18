@@ -10,6 +10,8 @@ An example of how to use `openapi-ts-backend` and `openapi-typescript-codegen` t
 - Automatic coercion of request data e.g. numeric query parameters
 - Automatic generation of a TypeScript client library
 
+![Components](components.jpg "Components")
+
 ## Run the server
 
 ```sh
