@@ -1,5 +1,5 @@
 import { OpenApi } from "openapi-ts-backend";
-import { OperationHandlers } from "./generated/types";
+import { OperationHandlers } from "./generated/server";
 import { showPetById, listPets, createPets } from "./pets_controller";
 
 // TODO: Fix annoying workaround where passing these directly in to

@@ -1,4 +1,4 @@
-import { OperationHandler, OperationHandlers } from "./generated/types";
+import { OperationHandler, OperationHandlers } from "./generated/server";
 
 export const createPets: OperationHandler<unknown, "createPets"> = (req) => {
   console.log({ body: req.body });

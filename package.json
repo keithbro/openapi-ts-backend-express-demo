@@ -26,6 +26,6 @@
     "test": "jest",
     "generate:all": "yarn generate:client && yarn generate:types",
     "generate:client": "openapi --input openapi.yaml --output ./src/generated/client",
-    "generate:types": "openapi-ts-backend generate-types openapi.yaml src/generated/types"
+    "generate:types": "openapi-ts-backend generate-types openapi.yaml src/generated/server"
   }
 }
