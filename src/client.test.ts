@@ -1,4 +1,4 @@
-import { PetsService } from "./client";
+import { PetsService } from "./generated/client";
 import fetch from "node-fetch";
 import nock from "nock";
 

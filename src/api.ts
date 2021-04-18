@@ -1,5 +1,5 @@
 import { OpenApi } from "openapi-ts-backend";
-import { OperationHandlers } from "./autogen";
+import { OperationHandlers } from "./generated/types";
 import { showPetById, listPets, createPets } from "./pets_controller";
 
 // TODO: Fix annoying workaround

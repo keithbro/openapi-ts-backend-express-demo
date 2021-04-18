@@ -1,4 +1,4 @@
-import { OperationHandler, OperationHandlers } from "./autogen";
+import { OperationHandler, OperationHandlers } from "./generated/types";
 
 export const createPets: OperationHandler<unknown, "createPets"> = (req) => {
   console.log({ body: req.body });
