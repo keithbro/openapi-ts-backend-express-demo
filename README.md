@@ -5,8 +5,8 @@ An example of how to use openapi-ts-backend to create typed request handlers tha
 ## Why is this interesting?
 
 - openapi.yaml as the single source of truth
-- Automatically generated request and response types
-- Automatic validation of requests and responses
+- Automatic generation of request and response types
+- Automatic validation of request and response data
 - Automatic coercion of request data e.g. numeric query parameters
 
 ## Run the server
