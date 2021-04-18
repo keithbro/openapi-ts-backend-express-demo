@@ -5,19 +5,19 @@ An example of how to use openapi-ts-backend to create typed request handlers tha
 ## Run the server
 
 ```sh
-yarn ts-node src/server.ts
+yarn dev
 ```
 
 ## Run the tests
 
 ```sh
-yarn jest src
+yarn test
 ```
 
 ## Updating the Schema:
 
 - Update the openapi.yaml file.
-- Run `yarn openapi-ts-backend generate-types openapi.yaml src/gen`.
+- Run `yarn types:generate`.
 - Request handlers will now be typed with the changes.
 
 ## Notes
