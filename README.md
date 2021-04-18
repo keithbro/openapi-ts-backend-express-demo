@@ -1,4 +1,4 @@
-# OpenAPI-TS-Backend + Express Demo
+# OpenAPI ❤️ TypeScript ❤️ Express
 
 An example of how to use `openapi-ts-backend` and `openapi-typescript-codegen` to create typed request handlers that integrate with Express and a TypeScript client library.
 
