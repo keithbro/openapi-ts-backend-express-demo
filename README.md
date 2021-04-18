@@ -30,10 +30,18 @@ yarn test
 - Run `yarn generate:all`.
 - Request handlers and the client library will now be typed with the changes.
 
-## Notes
+## Notes / Gotchas / Disclaimer
 
-openapi-ts-backend
+### unknown format "int32"
 
 - unknown format "int32" ignored in schema at path "#/properties/limit" (will be fixed with upcoming ajv-format release)
-- No safe way to set headers (might be because of the default response in the OpenAPI schema)
-- Would be cool if we could coerce dates to JS Date objects
+
+### Additional coercions
+
+It would be nice if (for example) date value could be coerced in to Date objects.
+
+### Type safety of Headers
+
+At the moment, headers are set by mutating the response object. This makes it difficult to enforce that one type of response should have certain headers, while the others do not. If the request handler could return the entire response, including headers, then it would be easier to type check that the headers match the body.
+
+Additonally, type safety is currently lost if an endpoint allows multiple responses, some with headers and some without.
