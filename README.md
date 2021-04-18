@@ -2,7 +2,7 @@
 
 An example of how to use openapi-ts-backend to create typed request handlers that integrate with Express.
 
-## Why is this cool?
+## Why is this interesting?
 
 - openapi.yaml as the single source of truth
 - Automatically generated request and response types
